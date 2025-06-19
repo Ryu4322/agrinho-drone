@@ -1,0 +1,338 @@
+/* Definição das Variáveis de Cores CSS */
+:root {
+  --cor-primaria: #2E7D32;     /* Verde escuro (Agricultura, Natureza) */
+  --cor-secundaria: #66BB6A;   /* Verde mais claro */
+  --cor-acento: #FFB300;      /* Amarelo/Laranja (Destaque, Sol) */
+  --cor-fundo: #FFFFFF;       /* Branco */
+  --cor-fundo-alt: #f4f8f4;   /* Verde muito claro/Cinza esverdeado para fundo alternativo */
+  --cor-texto: #333333;       /* Cinza escuro (Texto principal) */
+  --cor-texto-claro: #FFFFFF; /* Branco (Texto sobre fundos escuros) */
+  --cor-overlay: rgba(0, 0, 0, 0.6); /* Overlay escuro para o Hero */
+
+  --fonte-principal: 'Roboto', sans-serif;
+  --largura-container: 1100px; /* Largura máxima do conteúdo centralizado */
+}
+
+/* Reset Básico e Estilos Globais (SEM BOOTSTRAP) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+.container {
+  max-width: var(--largura-container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Header Customizado */
+.site-header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: 1em 0;
+  position: sticky; /* Fixa o header no topo */
+  top: 0;
+  z-index: 1000; /* Garante que fique sobre outros elementos */
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  color: var(--cor-texto-claro);
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+.main-nav a {
+  color: var(--cor-texto-claro);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active { /* Estilo para link ativo (precisaria de JS para funcionar dinamicamente) */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section Customizada */
+.hero-section {
+  background-image: linear-gradient(var(--cor-overlay), var(--cor-overlay)), url('https://www.branco.com.br/content/dam/Branco/Latin%20America/Portuguese-BR/Images/newsroom/Drones%2002.jpg');
+  background-size: cover;
+  background-position: center 1%; /* Ajuste conforme necessário */
+  color: var(--cor-texto-claro);
+  text-align: center;
+  padding: 8em 0; /* Espaçamento generoso */
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section h2 {
+  font-size: 3em;
+  color: var(--cor-texto-claro);
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.btn-cta {
+  background-color: var(--cor-acento);
+  color: var(--cor-texto);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #e6a100; /* Tom mais escuro do acento */
+  color: var(--cor-texto);
+}
+
+/* Estilos Gerais de Seção */
+.content-section {
+  padding: 4em 0;
+}
+
+.content-section.alt-bg {
+  background-color: var(--cor-fundo-alt);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2em;
+  color: var(--cor-primaria);
+  margin-bottom: 1.5em;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 1.5em auto 0 auto; /* Espaço após o carrossel */
+  color: #555;
+}
+
+/* Carrossel (Estilos Bootstrap já aplicados, mas podemos adicionar margens) */
+#droneCarousel {
+  margin-bottom: 2em; /* Espaço abaixo do carrossel */
+  border-radius: 8px; /* Adiciona borda arredondada */
+  overflow: hidden; /* Garante que as imagens fiquem dentro das bordas */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Sobrescrevendo legenda do carrossel para melhor contraste (exemplo) */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente mais escuro */
+  border-radius: 5px;
+  padding: 10px 15px !important; /* Força padding se necessário */
+}
+.carousel-caption h5 {
+  color: #fff; /* Garante texto branco */
+}
+.carousel-caption p {
+  color: #eee; /* Garante texto claro */
+  margin-bottom: 0;
+}
+
+
+/* Grid de Benefícios Customizado (usando Flexbox) */
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em; /* Espaçamento entre os itens */
+  justify-content: center; /* Centraliza os itens se não preencherem a linha */
+}
+
+.benefit-item {
+  background-color: var(--cor-fundo);
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  flex: 1 1 280px; /* Flex-grow, flex-shrink, flex-basis (responsivo) */
+  max-width: 350px; /* Largura máxima para cada item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.lado-esquerdo {
+  text-align: left;
+}
+
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-icon {
+  max-width: 60px; /* Tamanho do ícone */
+  margin-bottom: 1em;
+}
+
+.foto-site {
+  max-width: 90px; /* Tamanho do ícone */
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+.imagem-git {
+  max-width: 150px; /* Tamanho do ícone */
+  margin-bottom: 1em;
+  border-radius: 50%;
+ 
+}
+.alinhar-git {
+  display: flex;
+  justify-content: center;
+}
+
+.linguagens-git {
+  display: flex;
+  max-width: 50px; /* Tamanho do ícone */
+  margin-bottom: 1em;
+  margin-right: 0.5rem;
+
+}
+.benefit-item h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+
+/* Seção de Vídeo Customizada */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 8px;
+  margin: 0 auto; /* Centraliza o wrapper */
+  max-width: 800px; /* Limita a largura máxima do vídeo */
+   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 1.5em;
+}
+
+/* Footer Customizado */
+.site-footer {
+  background-color: var(--cor-texto);
+  color: var(--cor-texto-claro);
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+.site-footer p {
+  margin-bottom: 0.5em;
+  opacity: 0.8;
+}
+
+/* Media Queries para Responsividade (Customizadas) */
+@media (max-width: 768px) {
+  .site-header .container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .main-nav ul {
+      margin-top: 1em;
+      flex-wrap: wrap; /* Permite quebrar a linha do menu */
+      justify-content: center;
+  }
+  .main-nav li {
+      margin: 5px; /* Ajusta espaçamento no mobile */
+  }
+
+  .hero-section {
+      padding: 5em 0;
+  }
+  .hero-section h2 {
+      font-size: 2.2em;
+  }
+
+  .section-title {
+      font-size: 1.8em;
+  }
+
+  .benefits-grid {
+      flex-direction: column; /* Empilha os itens */
+      align-items: center; /* Centraliza os itens empilhados */
+      gap: 1.5em;
+  }
+   .benefit-item {
+      flex-basis: auto; /* Reseta a base flex */
+      width: 90%; /* Ocupa quase toda a largura */
+      max-width: 400px; /* Limita a largura máxima */
+  }
+}

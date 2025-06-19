@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Drones na Agricultura: Tecnologia e Inovação no Campo</title>
+
+    <!-- Bootstrap CSS (APENAS para o Carrossel) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Seu CSS Customizado (Vem DEPOIS do Bootstrap para poder sobrescrever, se necessário) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- (Opcional) Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>AgroDrone Agrinho</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#aplicacoes">Aplicações</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                    <li><a href="#tras">  Por Trás do Site</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero (Estilo Customizado) -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Drones na Agricultura</h2>
+                <p>A revolução tecnológica voando sobre o campo para maior precisão e produtividade.</p>
+                <a href="#aplicacoes" class="btn-cta">Descubra as Aplicações</a>
+            </div>
+        </section>
+
+        <!-- Seção de Aplicações com Carrossel Bootstrap -->
+        <section id="aplicacoes" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Aplicações Inovadoras dos Drones</h2>
+
+                <!-- === INÍCIO DO CÓDIGO BOOTSTRAP === -->
+                <div id="droneCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://networdagro.com.br/blog/wp-content/uploads/2022/02/iStock-1254095794-1.jpg" class="d-block w-100" alt="Drone realizando mapeamento aéreo de lavoura">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Mapeamento e Análise de Solo</h5>
+                                <p>Geração de mapas precisos da topografia e saúde da plantação.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://jornalagricola.wordpress.com/wp-content/uploads/2023/11/image-2.png" class="d-block w-100" alt="Drone pulverizando defensivos agrícolas em área específica">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Pulverização Inteligente</h5>
+                                <p>Aplicação direcionada de defensivos e fertilizantes, reduzindo custos e impacto ambiental.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://networdagro.com.br/blog/wp-content/uploads/2022/02/iStock-1254095794-1.jpg" class="d-block w-100" alt="Drone monitorando o crescimento e saúde das plantas">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Monitoramento de Culturas</h5>
+                                <p>Acompanhamento do desenvolvimento das plantas, identificação de pragas e doenças.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#droneCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#droneCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- === FIM DO CÓDIGO BOOTSTRAP === -->
+
+                <p class="section-description">Os VANTs (Veículos Aéreos Não Tripulados) oferecem uma visão detalhada e dados precisos, otimizando decisões no manejo agrícola.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios (Estilo Customizado) -->
+        <section id="beneficios" class="content-section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Benefícios da Agricultura de Precisão com Drones</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5994/5994257.png" alt="" class="benefit-icon"> <!-- Substituir por icones reais ou usar fonte de ícones -->
+                        <h3>Aumento da Produtividade</h3>
+                        <p>Monitoramento constante e intervenções precisas levam a colheitas mais abundantes.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2273/2273338.png" alt="" class="benefit-icon">
+                        <h3>Redução de Custos</h3>
+                        <p>Otimização do uso de insumos (água, fertilizantes, defensivos) e mão de obra.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9602/9602007.png" alt="" class="benefit-icon">
+                        <h3>Sustentabilidade</h3>
+                        <p>Menor uso de químicos e água, contribuindo para a preservação ambiental.</p>
+                    </div>
+                     <div class="benefit-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/12140/12140226.png" alt="" class="benefit-icon">
+                        <h3>Agilidade e Eficiência</h3>
+                        <p>Cobertura rápida de grandes áreas, impossível por métodos tradicionais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeo (Estilo Customizado) -->
+        <section id="video" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Veja os Drones em Ação</h2>
+                <div class="video-wrapper">
+                     <!-- Substitua 'SEU_VIDEO_ID_AQUI' pelo ID de um vídeo do YouTube sobre drones na agricultura -->
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/say5AK7UZI4?si=WKUhvK3L8XZIHbjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                 <p class="video-caption">Entenda como essa tecnologia está transformando o dia a dia no campo.</p>
+            </div>
+        </section>
+
+
+
+
+
+         <!-- Seção de Benefícios (Estilo Customizado) -->
+         <section id="tras" class="content-section alt-bg">
+          <div class="container">
+              <h2 class="section-title">Por Trás do Site: Conheça o Criador e o Professor</h2>
+              <div class="benefits-grid">
+                  <div class="benefit-item lado-esquerdo">
+                    
+                      <img src="https://avatars.githubusercontent.com/u/116736888?v=4" alt="" class="benefit-icon foto-site"> <!-- Substituir por icones reais ou usar fonte de ícones -->
+                      <h3>Professor programador</h3>
+                      <h6><strong><em>RAFAEL MORALES DE LIMA</em></strong></h6>
+                      <p>Componente: Programação e Robótica</p>
+                      <p>Componente: Pensamento Computacional</p>
+                      <p>Componente: Matemática II - Programação</p>
+                      <p><strong><em>Formado em Sistemas de Informação</em></strong></p>
+                        <p><strong><em>Linguagens de conhecimento</em></strong></p>
+                      <p><em>HTML5-CSS3-Bootstrap-Javascript-PHP</em></p>
+
+                      <div class="alinhar-git">
+                        <img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+                        <img src="https://camo.githubusercontent.com/4eaf7f26830ffa4bc4c4502a24e9be29fa2796208648a805e8f610da811aeb05/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+                        <img src="https://camo.githubusercontent.com/34c801e15a80d0d62f3da09bc6ca4f46a243457939381ae67f5003bdac51d432/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d706c61696e2e737667" alt="" class="benefit-icon linguagens-git">
+                        <img src="https://camo.githubusercontent.com/b757f08684d4442218bd04f3bb04cc0e142d0551619c678ff44304027085bb47/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626f6f7473747261702f626f6f7473747261702d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+                        <img src="https://camo.githubusercontent.com/92a977256f3f2b4ef99e6684c1d88f1ac0394ed909893e5e56cb3539a31f2590/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f7068702f7068702d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+
+                      </div>
+                      <div class="alinhar-git">
+                        <a href="#"> 
+                          <img src="https://silvrback.s3.amazonaws.com/uploads/dbe54ce7-777f-4997-9ea3-7a10b738e3a8/Github%20Header.png" alt="" class="benefit-icon imagem-git">
+                        </a>
+                      </div>
+                  </div>
+                  <div class="benefit-item lado-esquerdo">
+                      <img src="./img/ryan.jpg" alt="" class="benefit-icon foto-site">
+                      <h3>Criador do site</h3>
+                      <h6><strong><em> RYAN NICOLAS AZEVEDO LIBERATO</em></strong></h6>
+                      <p>Criar um site para o Agrinho foi uma experiência incrível! Com a ajuda do professor Rafael, aprendi muito
+                         sobre HTML, CSS e um pouco de Bootstrap, entendendo como essas tecnologias se conectam. Além disso, desenvolvi criatividade e organização. 
+                         Ver o site funcionando foi gratificante e me motivou a 
+                        continuar explorando o mundo da programação. Esse projeto ampliou meus conhecimentos e me deixou ainda mais inspirado!</p>
+                        <p><strong><em>Linguagens Utilizadas</em></strong></p>
+                        <div class="alinhar-git">
+                          <img src="https://camo.githubusercontent.com/6647554cf19482c32acc6a6a3b8bd68b845fafabd474595e7e92dead3075c3ea/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+                          <img src="https://camo.githubusercontent.com/4eaf7f26830ffa4bc4c4502a24e9be29fa2796208648a805e8f610da811aeb05/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+                          <img src="https://camo.githubusercontent.com/b757f08684d4442218bd04f3bb04cc0e142d0551619c678ff44304027085bb47/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626f6f7473747261702f626f6f7473747261702d6f726967696e616c2e737667" alt="" class="benefit-icon linguagens-git">
+  
+                        </div>
+
+                        <div class="alinhar-git">
+                          <a href="https://github.com/Ryu4322" target="_blank"> 
+                            <img src="https://silvrback.s3.amazonaws.com/uploads/dbe54ce7-777f-4997-9ea3-7a10b738e3a8/Github%20Header.png" alt="" class="benefit-icon imagem-git">
+                          </a>
+                        </div>
+                      </div>
+                   
+                    
+              </div>
+          </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 AgroDrone Agrinho Todos os direitos reservados.</p>
+            <p>Inovação e tecnologia para um agronegócio mais eficiente e sustentável.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap  (APENAS para o Carrossel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
